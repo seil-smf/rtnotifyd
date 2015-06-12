@@ -27,8 +27,6 @@
 
 #include <asm/types.h>
 #include <errno.h>
-#include <linux/netlink.h> 
-#include <linux/rtnetlink.h> 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -39,6 +37,8 @@
 #include <sys/socket.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <linux/netlink.h>
+#include <linux/rtnetlink.h>
 
 static int watch(int);
 static void logit(int, const char *, ...);
